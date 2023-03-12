@@ -1,13 +1,11 @@
-html{
+* {
     box-sizing: border-box;
 }
-
 section{
     margin: 0 auto;
-
 }
 img{
-    margin: 0 auto 1%;
+    margin: 0 auto 2%;
 }
 h1{
     font-size: 2.4em;
@@ -24,26 +22,20 @@ h2{
     height: 60%;
     margin: 10%, 20%;
 }
-.fa-plus{
-    font-size: 1.65em;
+.not_chosen_meme h2{
+    color: rgb(0, 78, 212);
 }
-.fa-x{
-    font-size: 1.3em;
+.not_chosen_meme img{
+    visibility: hidden;
+}
+.bayan .not_chosen_meme{
+    height: 3.6em;
 }
 
-.carousel{
-    width: 100%;
-    margin: 0;
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-}
-  
+/* Hover */
 @media (hover: hover) {
-    /* when hover is supported */
     .bayan:hover {
         cursor: pointer;
-
     }
     .bayan:hover .fa-plus{
         visibility: visible;
@@ -57,38 +49,50 @@ h2{
     }
 }
 
-
-.bayan .not_chosen_meme h2{
-    color: rgb(0, 78, 212);
-}
-.bayan .not_chosen_meme img{
+/* Icons */
+.fa-plus{
+    font-size: 1.65em;
     visibility: hidden;
 }
-.bayan .not_chosen_meme{
-    height: 3.6em;
-}
-.bayan .fa-plus{
-    visibility: hidden;
-}
-.bayan .fa-x{
+.fa-x{
+    font-size: 1.3em;
     visibility: hidden;
 }
 
-.meme_image {
-    height: 26rem;
-    width: 26rem;  
+/* Accordion */
+.accordion{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
 }
-
-.carousel__item {
+.accordion__item {
     width: 100%;
     border-top: 1px solid grey;
 }
-.carousel__descr{
-    
+.accordion_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion_image img{
+    height: 45%;
+    width: 45%;   
+}
+.accordion__descr{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.fa-xmark {
-    color:black;
+
+/* Expansion animation */
+/* #disaster_girl:hover img{
+    animation: expansion 10s ease-in-out;
 }
+
+@keyframes expansion {
+    from { visibility: hidden;}
+    to {visibility: visible;}
+} */
+
