@@ -96,3 +96,64 @@ h2{
     to {visibility: visible;}
 } */
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 580px) {
+/* Styles */
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    .bayan{
+        width: 98%;
+    }
+    .bayan .not_chosen_meme{
+        height: 2.7em;
+    }
+    .fa-plus{
+        font-size: 1.1em;
+        visibility: visible;
+    }
+    .fa-x{
+        font-size: 1.0em;
+        visibility: visible;
+    }
+    .accordion_image img{
+        height: 100%;
+        width: 100%;   
+    }
+}
+
+/* Tablet (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 700px)
+and (max-device-width : 1200px) {
+/* Styles */
+    h1{
+        font-size: 1.9em;
+    }
+    h2{
+        font-size: 1.35em;
+    }
+    .bayan{
+        width: 98%;
+    }
+    .bayan .not_chosen_meme{
+        height: 3.1em;
+    }
+    .fa-plus{
+        font-size: 1.4em;
+        visibility: visible;
+    }
+    .fa-x{
+        font-size: 1.2em;
+        visibility: visible;
+    }
+    .accordion_image img{
+        height: 55%;
+        width: 55%;   
+    }
+}
