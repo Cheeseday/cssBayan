@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+section{
+    margin: 0 auto;
+}
+img{
+    margin: 0 auto 2%;
+}
+h1{
+    font-size: 2.4em;
+    margin: 0.5em 0;
+}
+h2{
+    font-size: 1.6em;
+    margin: 0.5em 0;
+    color: black;
+}
+
+.bayan{
+    width: 60%;
+    height: 60%;
+    margin: 10%, 20%;
+}
+.not_chosen_meme h2{
+    color: rgb(0, 78, 212);
+}
+.not_chosen_meme img{
+    visibility: hidden;
+}
+.bayan .not_chosen_meme{
+    height: 3.6em;
+}
+
+/* Hover */
+@media (hover: hover) {
+    .bayan:hover {
+        cursor: pointer;
+    }
+    .bayan:hover .fa-plus{
+        visibility: visible;
+    }
+    .bayan:hover .fa-x{
+        visibility: visible;
+    }
+    .bayan:hover .not_chosen_meme h2{
+        color: black;
+        transition: color 0.45s ease;
+    }
+}
+
+/* Icons */
+.fa-plus{
+    font-size: 1.65em;
+    visibility: hidden;
+}
+.fa-x{
+    font-size: 1.3em;
+    visibility: hidden;
+}
+
+/* Accordion */
+.accordion{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+.accordion__item {
+    width: 100%;
+    border-top: 1px solid grey;
+}
+.accordion_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion_image img{
+    height: 45%;
+    width: 45%;   
+}
+.accordion__descr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Expansion animation */
+/* #disaster_girl:hover img{
+    animation: expansion 10s ease-in-out;
+}
+
+@keyframes expansion {
+    from { visibility: hidden;}
+    to {visibility: visible;}
+} */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 580px) {
+/* Styles */
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    .bayan{
+        width: 98%;
+    }
+    .bayan .not_chosen_meme{
+        height: 2.7em;
+    }
+    .fa-plus{
+        font-size: 1.1em;
+        visibility: visible;
+    }
+    .fa-x{
+        font-size: 1.0em;
+        visibility: visible;
+    }
+    .accordion_image img{
+        height: 100%;
+        width: 100%;   
+    }
+}
+
+/* Tablet (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 700px)
+and (max-device-width : 1200px) {
+/* Styles */
+    h1{
+        font-size: 1.9em;
+    }
+    h2{
+        font-size: 1.35em;
+    }
+    .bayan{
+        width: 98%;
+    }
+    .bayan .not_chosen_meme{
+        height: 3.1em;
+    }
+    .fa-plus{
+        font-size: 1.4em;
+        visibility: visible;
+    }
+    .fa-x{
+        font-size: 1.2em;
+        visibility: visible;
+    }
+    .accordion_image img{
+        height: 55%;
+        width: 55%;   
+    }
+}
