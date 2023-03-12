@@ -1,0 +1,46 @@
+section{
+    margin: 0 auto;
+
+}
+.bayan{
+    width: 60%;
+    height: 60%;
+    margin: 10%, 20%;
+}
+
+.carousel{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bayan:hover {
+    cursor: pointer;
+}
+.bayan:hover .fa-plus{
+    visibility: hidden;
+}
+
+.meme_image {
+    height: 40%;
+    width: 40%;
+    
+}
+
+h2{
+    font-size: 1.7em;
+    margin: 0.5em 0;
+}
+
+.carousel__item {
+    border-top: 1px solid grey;
+}
+.carousel__descr {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.fa-xmark {
+    color:black;
+}
