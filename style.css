@@ -1,45 +1,93 @@
+html{
+    box-sizing: border-box;
+}
+
 section{
     margin: 0 auto;
 
 }
+img{
+    margin: 0 auto 1%;
+}
+h1{
+    font-size: 2.4em;
+    margin: 0.5em 0;
+}
+h2{
+    font-size: 1.6em;
+    margin: 0.5em 0;
+    color: black;
+}
+
 .bayan{
     width: 60%;
     height: 60%;
     margin: 10%, 20%;
 }
+.fa-plus{
+    font-size: 1.65em;
+}
+.fa-x{
+    font-size: 1.3em;
+}
 
 .carousel{
+    width: 100%;
     margin: 0;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
 }
+  
+@media (hover: hover) {
+    /* when hover is supported */
+    .bayan:hover {
+        cursor: pointer;
 
-.bayan:hover {
-    cursor: pointer;
+    }
+    .bayan:hover .fa-plus{
+        visibility: visible;
+    }
+    .bayan:hover .fa-x{
+        visibility: visible;
+    }
+    .bayan:hover .not_chosen_meme h2{
+        color: black;
+        transition: color 0.45s ease;
+    }
 }
-.bayan:hover .fa-plus{
+
+
+.bayan .not_chosen_meme h2{
+    color: rgb(0, 78, 212);
+}
+.bayan .not_chosen_meme img{
+    visibility: hidden;
+}
+.bayan .not_chosen_meme{
+    height: 3.6em;
+}
+.bayan .fa-plus{
+    visibility: hidden;
+}
+.bayan .fa-x{
     visibility: hidden;
 }
 
 .meme_image {
-    height: 40%;
-    width: 40%;
-    
-}
-
-h2{
-    font-size: 1.7em;
-    margin: 0.5em 0;
+    height: 26rem;
+    width: 26rem;  
 }
 
 .carousel__item {
+    width: 100%;
     border-top: 1px solid grey;
 }
-.carousel__descr {
+.carousel__descr{
+    
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
 }
 .fa-xmark {
     color:black;
